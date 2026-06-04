@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 Widget appBarLeading = Padding(
-  padding: const EdgeInsets.only(left: 10, top: 5, right: 2, bottom: 5),
+  padding: const EdgeInsets.only(left: 10, top: 5, right: 5, bottom: 5),
   child: Container(
     width: 45,
     height: 45,
