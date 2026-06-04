@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_grocery/pages/home_page/widgets/search_bar.dart';
 import 'package:flutter_grocery/widgets/app_bar/app_bar.dart';
 import 'package:flutter_grocery/widgets/reusable/product_card.dart';
+import 'package:flutter_grocery/widgets/reusable/product_price_card.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -42,22 +43,79 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     ProductCard(
-                      title: "Accessibility",
+                      title: "Vegetables",
                       titleColor: Colors.white,
                       description: "A catalog of Flutter's accessibility widgets. Make your app accessible.",
                       descColor: Colors.white70,
-                      mainBoxColor: Colors.pinkAccent,
-                      smallBoxColor: Colors.amber,
+                      mainBoxColor: Colors.deepPurple,
+                      smallBoxColor: Colors.green,
                     ),
                     ProductCard(
-                      title: "Async",
+                      title: "Fish and Meat",
                       titleColor: Colors.white,
-                      description: "Widgets supporting async patterns in your Flutter apps.",
+                      description: "A catalog of Flutter's async widgets. Widgets supporting your Flutter apps.",
                       descColor: Colors.white70,
-                      mainBoxColor: Colors.pinkAccent,
-                      smallBoxColor: Colors.amber,
+                      mainBoxColor: Colors.deepPurple,
+                      smallBoxColor: Colors.green,
                     ),
                   ],
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  ProductCard(
+                    title: "Input",
+                    titleColor: Colors.black,
+                    description: "A catalog of Flutter's input widgets. Take user input Material Cupertino.",
+                    descColor: Colors.black.withOpacity(0.7),
+                    mainBoxColor: Colors.amber,
+                    smallBoxColor: Colors.deepOrange,
+                  ),
+                  ProductCard(
+                    title: "Scrolling",
+                    titleColor: Colors.black,
+                    description: "A catalog of Flutter's scrolling widgets. Scroll multiple widgets as parent.",
+                    descColor: Colors.black.withOpacity(0.7),
+                    mainBoxColor: Colors.amber,
+                    smallBoxColor: Colors.deepOrange,
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              Text(
+                "For Sale and Low Cost",
+                style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold
+                ),
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  ProductPriceCard(
+                    title: "Washing Liquid",
+                    amount: 220,
+                    unit: "ml",
+                    price: 150,
+                  ),
+                  ProductPriceCard(
+                    title: "Coffee and Tea",
+                    amount: 100,
+                    unit: "g",
+                    price: 30,
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 40,
               ),
             ],
           ),
