@@ -49,7 +49,7 @@ class ProductCard extends StatelessWidget {
               width: 160,
               decoration: BoxDecoration(
                 color: smallBoxColor,
-                borderRadius: BorderRadius.circular(15)
+                borderRadius: BorderRadius.circular(15),
               ),
             )
           ],
